@@ -1,0 +1,23 @@
+{
+"name": "vlads-portfolio",
+"version": "1.0.0",
+"description": "",
+"main": "gulpfile.js",
+"dependencies": {
+  "animate.css": "^3.5.2"
+},
+"devDependencies": {
+  "gulp": "^3.8.11",
+  "gulp-ruby-sass": "^1.0.5",
+  "gulp-sourcemaps": "^1.5.2",
+  "gulp-webserver": "^0.9.1"
+},
+"scripts": {
+  "test": "test"
+},
+"repository": {
+  "type": "git",
+  "url": "git+https://Vladimir_mjv@bitbucket.org/Vladimir_mjv/vlads-portfolio.git"
+},
+"author": "vladimir mujakovic"
+}

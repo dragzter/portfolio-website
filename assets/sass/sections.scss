@@ -1,0 +1,33 @@
+//header
+.home-header {
+    height: 80vh !important;
+}
+.logo-dark, .logo-light {
+    width: 60px;
+}
+//about
+
+//highlights
+.highlights {
+    p {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 24px;
+    }
+}
+//skills
+
+//projects or works
+.portfolio-item {
+    width: 50%;
+}
+
+//quotes
+#quotes {
+    background-image: url("../img/paper.jpg");
+}
+
+//footer
+#contact {
+    background-image: none;
+}

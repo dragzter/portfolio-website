@@ -1,8 +1,28 @@
 @media (max-width: 415px) {
      .home-header {
-         height: 100vh !important;
+         min-height: 100vh !important;
      }
     .portfolio-item {
     width: 100%;
 }   
+}
+
+@media (max-width: 769px) {
+    .home-header {
+         height: auto !important;
+     }
+    .google-text {
+        padding-bottom: 4em;
+    }
+    
+    .portfolio-item {
+    width: 100%;
+}
+
+}
+
+@media (max-width: 415px){
+    .google-div {
+        left: 0;     
+    }
 }

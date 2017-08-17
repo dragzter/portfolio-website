@@ -14,7 +14,7 @@ $Body .= $name;
 $Body .= "\n";
 
 $Body .= "Phone: ";
-$Body .= $name;
+$Body .= $phone;
 $Body .= "\n";
 
 $Body .= "Email: ";

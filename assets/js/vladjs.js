@@ -7,6 +7,7 @@ $("#contactForm").validator().on("submit", function (event) {
         event.preventDefault();
         submitForm();
         $('#name, #email, #phone, #website, #message').val('');
+        console.log(website);
     }
 });
 
@@ -18,11 +19,11 @@ function submitForm(){
     var name = $("#name").val();
     console.log("i got a name");
     var email = $("#email").val();
-    console.log("i got an email");
+    console.log("i got an email" + " " + email);
     var phone = $("#phone").val();
-    console.log("i got a phone");
+    console.log("i got a phone" + " " + phone);
     var website = $("#website").val();
-    console.log("i got a site");
+    console.log("i got a site" + " " + website);
     var message = $("#message").val();
     
     console.log("i have received ALL variables");
@@ -30,7 +31,7 @@ function submitForm(){
     $.ajax({
         type: "POST",
         url: "assets/mail/process.php",
-        data: "name=" + name + "&email=" + email + "&phone" + phone + "&website" + website + "&message=" + message,
+        data: "name=" + name + "&email=" + email + "&phone=" + phone + "&website=" + website + "&message=" + message,
         success : function(text){
             if (text == "success"){
                 formSuccess();
@@ -42,6 +43,6 @@ function submitForm(){
     });
 }
 
-// function formSuccess(){
-//     $( "#msgSubmit" ).toggleClass( "invisible" );
-// }
+function formSuccess(){
+    $( "#msgSubmit" ).toggleClass( "invisible" );
+}
